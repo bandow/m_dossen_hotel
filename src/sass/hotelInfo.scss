@@ -1,0 +1,135 @@
+@import "base","variable","common";
+.hotel-info-wrapper{
+	background:url('../images/hotel_info_bg.jpg') #f7f7f7 no-repeat; 
+	background-size:100% auto;
+}
+.hotel-info-header{
+	padding:0 3%;
+	width:100%;
+	height:44px;
+ 	@include display(flex);
+ 	align-items:center;
+ 	.left{
+ 		width:10%;
+ 	}
+ 	h1{
+ 		width:80%;
+ 		font:.8rem/40px $publicFont;
+ 		color:#333;
+ 		text-align:center;
+ 	}
+ 	.right{
+ 		margin-left:-10%;
+ 		width:20%;
+ 		@include display(flex);
+ 		align-items:center;
+ 		justify-content: space-between;
+ 		i{
+ 			width:20px;
+ 			height:20px;
+ 			font-size:0;
+ 			@include display(flex);
+ 			align-items:center;
+ 			justify-content:center;
+ 			img{
+ 				width:auto;
+ 				height:auto;
+ 				max-height:100%;
+ 				max-width:100%;
+ 			}
+ 		}
+ 	}
+}
+.page-content{
+
+}
+.info-date{
+
+}
+.info{
+	position:relative;
+	z-index:1;
+	margin:0 3%;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow: 1px 2px 5px #ccc;
+	.info-content{
+		padding:3%;
+		border-bottom:1px solid #eee;
+ 		.room-img{
+ 			float:left;
+ 			width:80px;
+ 			height:80px;
+ 			border-radius:5px;
+ 			overflow:hidden;
+ 			img{
+ 				width:100%;
+ 			}
+ 		}
+ 		.room-detail{
+			margin-left:90px;
+			margin-right:20px;
+			flex:1;
+			h3{
+				font:.75rem/1.5 $publicFont;
+				color:#333;
+			}
+			p{
+				margin-top:5px;
+				@include display(flex);
+	 			align-items:center;
+	 			i{
+	 				width:12px;
+	 				img{
+	 					width:100%;
+	 				}
+	 			}
+	 			span{
+	 				margin-left:.2rem;
+	 				flex:1;
+	 				font:.7rem/1.5 $publicFont;
+	 				color:#999;
+	 				overflow: hidden;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+	 			}
+			}
+	    }
+	}
+	.info-score{
+		padding:5% 0;
+		@include display(flex);
+ 		align-items:center;
+ 		justify-content:center;
+ 		h2{
+ 			font:1.2rem/1.2 $publicFont;
+ 			color:#990036;
+ 			span{
+ 				font-size:.55rem;
+ 			}
+ 		}
+ 		.r{
+ 			margin-left:.5rem;
+ 			.star{
+ 				width:80px;
+ 				height:12px;
+ 				background-image:url('../images/star.png');
+ 				background-size:100% auto;
+			    background-repeat:no-repeat;
+			    background-position:0 0;
+ 			}
+ 			a{
+ 				display: block;
+ 				font:.6rem/1.5 $publicFont;
+ 				color:#999;
+ 			}
+ 		}
+	}
+}
+.date{
+	position: relative;
+    z-index: 0;
+    padding-top: 70px;
+    margin-top: -70px;
+	background-color:#fff;
+}
