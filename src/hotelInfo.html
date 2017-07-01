@@ -27,7 +27,13 @@
 		<div class="info-date">
 			<div class="info">
 				<div class="info-content dossen-arrow">
-					<div class="room-img"><img src="images/hotelinfo1.jpg" alt=""></div>
+					<a href="" class="room-img">
+						<img src="images/hotelinfo1.jpg" alt="">
+						<div class="entry-img">
+							<i><img src="images/img_icon.png" alt=""></i>
+							<span>16</span>
+						</div>
+					</a>
 					<div class="room-detail">
 						<h3>城市便捷酒店白云区大金钟路店城市便捷酒店</h3>
 						<p>
@@ -39,28 +45,341 @@
 				<div class="info-score">
 					<h2>96<span>分</span></h2>
 					<div class="r">
-						<div class="star star1"></div>
+						<div class="star star9"></div>
 						<a href="">248条评论 ></a>
 					</div>
 				</div>
 			</div>
-			<div class="date">
+			<div class="date" id="date">
 				<div class="l">
 					<p>入住日期 (今天)</p>
-					<h2>5月09日</h2>
+					<h2 class="check-in-day">5月09日</h2>
 				</div>
 				<div class="c">
-					<p>1晚</p>
+					<i></i>
+					<p><em id="num">1</em>晚</p>
 				</div>
 				<div class="r">
 					<p>退房日期 (周六)</p>
-					<h2>5月11日</h2>
+					<h2 class="check-out-day">5月11日</h2>
 				</div>
 			</div>
 		</div>
+		<div class="type">
+			<ul>
+				<li class="rooms on">
+					<div class="wrap active">
+						<div class="l">
+							<h2>标准大床房</h2>
+							<p>16~20m²  | 有窗</p>
+						</div>
+						<div class="r">
+							<div class="price"><span>¥</span><strong>178</strong>门店价</div>
+						</div>
+					</div>
+					<div class="info-list">
+						<ul>
+							<li class="roomdetail">
+								<div class="left">
+									<h3><span>生日免费房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>黑金卡本人专享</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>0</strong></div>
+									</div>
+									<div class="btn btn1">
+										<p>免费订</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail">
+								<div class="left">
+									<h3><span>预付价</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>提前7天预订</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>148</strong></div>
+										<p>预付立减10元</p>
+									</div>
+									<div class="btn btn2">
+										<p>预订</p>
+										<p>需预付</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail">
+								<div class="left">
+									<h3><span>标准大床房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>158</strong></div>
+										<p>房源紧张</p>
+									</div>
+									<div class="btn btn2">
+										<p>预订</p>
+										<p>需预付</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail full-room">
+								<div class="left">
+									<h3><span>标准大床房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>158</strong></div>
+									</div>
+									<div class="btn btn1">
+										<p>满房</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail full-room">
+								<div class="left">
+									<h3><span>积分兑换房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>提前1天预订</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><strong>500</strong>积分</div>
+									</div>
+									<div class="btn btn3">
+										<p>积分<br>不足</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail full-room">
+								<div class="left">
+									<h3><span>积分兑换房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>提前1天预订</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><strong>500</strong>积分</div>
+									</div>
+									<div class="btn btn3">
+										<p>积分<br>不足</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail full-room">
+								<div class="left">
+									<h3><span>积分兑换房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>提前1天预订</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><strong>500</strong>积分</div>
+									</div>
+									<div class="btn btn3">
+										<p>积分<br>不足</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="more">
+							<p>查看更多</p>
+							<i class="dossen-arrow-bottom"></i>
+						</div>
+					</div>
+				</li>
+				<li class="rooms">
+					<div class="wrap">
+						<div class="l">
+							<h2>标准大床房</h2>
+							<p>16~20m²  | 有窗</p>
+						</div>
+						<div class="r">
+							<div class="price"><span>¥</span><strong>178</strong>起</div>
+						</div>
+					</div>
+					<div class="info-list">
+						<ul>
+							<li class="roomdetail">
+								<div class="left">
+									<h3><span>生日免费房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>黑金卡本人专享</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>0</strong></div>
+									</div>
+									<div class="btn btn1">
+										<p>免费订</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail">
+								<div class="left">
+									<h3><span>预付价</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>提前7天预订</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>148</strong></div>
+										<p>预付立减10元</p>
+									</div>
+									<div class="btn btn2">
+										<p>预订</p>
+										<p>需预付</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail">
+								<div class="left">
+									<h3><span>标准大床房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>158</strong></div>
+										<p>房源紧张</p>
+									</div>
+									<div class="btn btn2">
+										<p>预订</p>
+										<p>需预付</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail full-room">
+								<div class="left">
+									<h3><span>标准大床房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><span>¥</span><strong>158</strong></div>
+									</div>
+									<div class="btn btn1">
+										<p>满房</p>
+									</div>
+								</div>
+							</li>
+							<li class="roomdetail full-room">
+								<div class="left">
+									<h3><span>积分兑换房</span><i><img src="images/question_icon.png" alt=""></i></h3>
+									<p><span>含早</span><span>不可取消</span></p>
+									<p class="activity"><em>提前1天预订</em></p>
+								</div>
+								<div class="right">
+									<div class="value">
+										<div class="price"><strong>500</strong>积分</div>
+									</div>
+									<div class="btn btn3">
+										<p>积分<br>不足</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="more">
+							<p>查看更多</p>
+							<i class="dossen-arrow-bottom"></i>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="hotel-serve">
+			<h3>酒店服务</h3>
+			<ul>
+				<li>
+					<i><img src="images/breakfast_icon.png" alt=""></i>
+					<p>早餐</p>
+				</li>
+				<li>
+					<i><img src="images/p_icon.png" alt=""></i>
+					<p>停车场</p>
+				</li>
+				<li>
+					<i><img src="images/wifi_icon.png" alt=""></i>
+					<p>WIFI</p>
+				</li>
+				<li>
+					<i><img src="images/more_icon.png" alt=""></i>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
-<!-- script begin -->
+<!-- mask begin -->
+<div class="mask"></div>
+<!-- mask end -->
+<!-- activity info begin -->
+<div class="page-activity-info">
+	<div class="img"><img src="images/hotelinfo2.jpg" alt=""></div>
+	<div class="text">
+		<h3>活动标题</h3>
+		<p>它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它是活动详情它</p>
+	</div>
+	<div class="close">
+		<img src="images/hotelinfo_close.png" alt="">
+	</div>
+</div>
+<!-- activity info end -->
+<!-- room info begin -->
+<div class="page-room-info">
+	<div class="img"><img src="images/hotelinfo2.jpg" alt=""></div>
+	<div class="text">
+		<h3>活动标题</h3>
+		<p><span>早餐：</span><span>无早；</span></p>
+		<p><span>窗户：</span><span>有窗；</span></p>
+		<p><span>床型：</span><span>1.8*2.0m大床</span></p>
+		<p><span>面积：</span><span>28m²</span></p>
+		<p><span>楼层：</span><span>无；</span></p>
+		<p><span>可住：</span><span>2人(建议)；</span></p>
+		<p><span>上网：</span><span>WIFI、有限宽带(免费)；</span></p>
+	</div>
+	<div class="close">
+		<img src="images/hotelinfo_close.png" alt="">
+	</div>
+</div>
+<!-- room info begin -->
+<!-- hotel equipment begin -->
+<div class="page-hotel-equipment">
+	<div class="title">
+		<h2>酒店设施</h2>
+		<i></i>
+	</div>
+	<ul>
+		<li><i><img src="images/computer_icon.png" alt=""></i><span>大堂电脑</span></li>
+		<li><i><img src="images/wifi_icon.png" alt=""></i><span>免费WIFI</span></li>
+		<li><i><img src="images/washer_icon.png" alt=""></i><span>自助洗衣房</span></li>
+		<li><i><img src="images/manifdder_icon.png" alt=""></i><span>复印传真</span></li>
+		<li><i><img src="images/coffeemaker_icon.png" alt=""></i><span>自助咖啡机</span></li>
+		<li><i><img src="images/breakfast_icon.png" alt=""></i><span>自助早餐厅</span></li>
+		<li><i><img src="images/book_bar_icon.png" alt=""></i><span>休闲书吧</span></li>
+		<li><i><img src="images/p_icon.png" alt=""></i><span>停车场</span></li>
+		<li><i><img src="images/swing_card_icon.png" alt=""></i><span>支持刷卡</span></li>
+		<li><i><img src="images/lift_icon.png" alt=""></i><span>内有电梯</span></li>
+	</ul>
+	<ul>
+		<li><i><img src="images/broadband_icon.png" alt=""></i><span>免费宽带</span></li>
+		<li><i><img src="images/kettle_icon.png" alt=""></i><span>电热水壶</span></li>
+		<li><i><img src="images/wind_icon.png" alt=""></i><span>新风循环</span></li>
+		<li><i><img src="images/air_blower_icon.png" alt=""></i><span>吹风筒</span></li>
+		<li><i><img src="images/tv_icon.png" alt=""></i><span>有线电视</span></li>
+		<li><i><img src="images/hot_water_icon.png" alt=""></i><span>热水供应</span></li>
+		<li><i><img src="images/phone_icon.png" alt=""></i><span>电话</span></li>
+		<li><i><img src="images/air_conditioner_icon.png" alt=""></i><span>冷暖空调</span></li>
+		<li><i><img src="images/electronic_lock_icon.png" alt=""></i><span>电子门锁</span></li>
+		<li><i><img src="images/awaken_serve_icon.png" alt=""></i><span>叫醒服务</span></li>
+	</ul>
+	<div class="close"><img src="images/equipmen_close.png" alt=""></div>
+</div>
+<!-- hotel equipment end -->
+<!-- script end -->
 <script>
 	//返回上一页
 	function goback(){
@@ -70,3 +389,5 @@
 <!-- script end -->
 </body>
 </html>
+
+

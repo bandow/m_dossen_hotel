@@ -3,16 +3,23 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const extractSass = new ExtractTextPlugin({
-    filename: "styles/[name].[hash:5].css",
+    filename: "styles/[name].[chunkhash:5].css",
 });
 const config = {
     context: path.resolve(__dirname, './src'),
     entry: {
-        hotelInfo:'./scripts/hotelInfo.js',
+        // hotelInfo:'./scripts/hotelInfo.js',
+        // ordersSubmit:'./scripts/ordersSubmit.js',
+        // selectCoupon:'./scripts/selectCoupon.js',
+        // selectBreakfast:'./scripts/selectBreakfast.js',
+        // paySuccess:'./scripts/paySuccess.js',
+        // hotelDisplay:'./scripts/hotelDisplay.js',
+        // hotelComment:'./scripts/hotelComment.js',
+         submitComment:'./scripts/submitComment.js',
     },
     output:{
         path: path.resolve(__dirname, './dist'),
-        filename: 'scripts/[name]-[hash:5].js',
+        filename: 'scripts/[name]-[chunkhash:5].js',
         //publicPath: 'dist/' 
     },
     module: {
@@ -57,17 +64,86 @@ const config = {
         ]
     },
     plugins: [
-       new htmlWebpackPlugin({
-            filename:'hotelInfo.html',
-            template:'hotelInfo.html',
+       // new htmlWebpackPlugin({
+       //      filename:'hotelInfo.html',
+       //      template:'hotelInfo.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['hotelInfo'],   //指定那个js
+       // }),
+       // new htmlWebpackPlugin({
+       //      filename:'ordersSubmit.html',
+       //      template:'ordersSubmit.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['ordersSubmit'],   //指定那个js
+       // }),
+       // new htmlWebpackPlugin({
+       //      filename:'selectCoupon.html',
+       //      template:'selectCoupon.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['selectCoupon'],   //指定那个js
+       // }),
+       // new htmlWebpackPlugin({
+       //      filename:'selectBreakfast.html',
+       //      template:'selectBreakfast.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['selectBreakfast'],   //指定那个js
+       // }),
+       // new htmlWebpackPlugin({
+       //      filename:'paySuccess.html',
+       //      template:'paySuccess.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['paySuccess'],   //指定那个js
+       // }),
+       // new htmlWebpackPlugin({
+       //      filename:'hotelDisplay.html',
+       //      template:'hotelDisplay.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['hotelDisplay'],   //指定那个js
+       // }),
+       //  new htmlWebpackPlugin({
+       //      filename:'hotelComment.html',
+       //      template:'hotelComment.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['hotelComment'],   //指定那个js
+       // }),
+        new htmlWebpackPlugin({
+            filename:'submitComment.html',
+            template:'submitComment.html',
             inject:'body',  //指定js放那个位子 比如body
             minify:{            //压缩
                 removeComments:false,   //true去掉注释
                 collapseWhitespace:false  //true去掉空格
             },
-            chunks:['hotelInfo'],   //指定那个js
+            chunks:['submitComment'],   //指定那个js
        }),
-       
        //转化sass的方法
        extractSass,
     ]
