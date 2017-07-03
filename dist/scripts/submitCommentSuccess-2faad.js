@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 11:
+/***/ 14:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -10336,25 +10336,17 @@ return jQuery;
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_submitComment_scss__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_submitComment_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_sass_submitComment_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_submitCommentSuccess_scss__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_submitCommentSuccess_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_sass_submitCommentSuccess_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 
 
-
-__WEBPACK_IMPORTED_MODULE_1_jquery___default()(document).ready(function () {
-   //点击覆盖层
-   __WEBPACK_IMPORTED_MODULE_1_jquery___default()(".mask").on("click", function () {
-      // $(".mask").fadeOut();
-      // $(".page-album-info").removeClass("on");
-   });
-});
 
 /***/ })
 

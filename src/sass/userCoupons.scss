@@ -1,0 +1,206 @@
+@import "base","variable","common";
+.select-coupon-wrapper{
+	padding-top:44px;
+	padding-bottom:40px;
+	background-color:#f7f7f7;
+}
+.select-coupon-header{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	z-index:3;
+	background:url("../images/header_top_bg.jpg") no-repeat;
+	background-size:100% 100%;
+	padding:0 3%;
+	width:100%;
+	height:44px;
+ 	@include display(flex);
+ 	align-items:center;
+ 	.left{
+ 		width:10%;
+ 	}
+ 	h1{
+ 		width:80%;
+ 		font:.8rem/40px $publicFont;
+ 		color:#333;
+ 		text-align:center;
+ 	}
+ 	.right{
+ 		margin-left:-15%;
+ 		width:25%;
+ 		a{
+		    display: block;
+ 			font:.6rem/40px $publicFont;
+ 			color:#333;
+ 			text-align:right;
+ 		}
+ 	}
+}
+.coupon-list{
+	.item{
+		position:relative;
+		margin:5%;
+		padding:5% 2% 2% 2%;
+		background-color:#fff;
+		border-radius:5px;
+		box-shadow: 1px 2px 5px #ebebeb;
+		.left{
+			float:left;
+			.price{
+				margin:0 0 0 10px;
+				width:50px;
+				height:50px;
+				background-color:#da004b;
+				border-radius:100%;
+				font:.55rem/50px $publicFont;
+		 		color:#fff;
+		 		text-align:center;
+		 		@include display(flex);
+				align-items:center;
+				justify-content: center;
+		 		em{
+		 			font:bold 1rem/50px $publicFont;
+		 		}
+		 		i{
+		 			@include display(flex);
+					align-items:center;
+					justify-content: center;
+		 			width:26px;
+		 			font-size:0;
+		 			img{
+		 				width:100%;
+		 			}
+		 		}
+			}
+		}
+		.right{
+			margin-left:70px;
+			h3{
+				font:.85rem/1.5 $publicFont;
+		 		color:#333;
+		 		span{
+					font:.6rem/1.5 $publicFont;
+			 		color:#666;
+		 		}
+			}
+			p{
+				font:.65rem/1.5 $publicFont;
+		 		color:#666;
+		 		margin-bottom:1rem;
+			}
+			time{
+				padding:.3rem 0;
+				border-top:1px solid #eee;
+			    display: block;
+				font:.6rem/1.5 $publicFont;
+		 		color:#999;
+			}
+		}
+		.select{
+			position:absolute;
+			top:8%;
+			right:3%;
+			i{
+				display:block;
+				width:1rem;
+				height:1rem;
+				font-size:0;
+				img{
+					width:100%;
+				}
+			}
+		}
+		&:before{
+			position:absolute;
+			top:62%;
+			left:-.4rem;
+			content:"";
+			width:.8rem;
+			height:.8rem;
+			background-color:#f7f7f7;
+			border-radius:100%;	
+		}
+		&:after{
+			position:absolute;
+			top:62%;
+			right:-.4rem;
+			content:"";
+			width:.8rem;
+			height:.8rem;
+			background-color:#f7f7f7;
+			border-radius:100%;	
+		}
+	}
+}
+.see-history-coupon{
+	position:fixed;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index:3;
+	a{
+		font:.6rem/40px $publicFont;
+ 		color:#da004c;
+ 		text-align:center;
+ 		display:block;
+ 		background-color:#f7f7f7;
+	}
+}
+
+.history-coupon-list{
+	.item{
+		.left{
+			.price{
+				background-color:#e0e0e0;
+			}
+		}
+		.right{
+			h3{
+		 		color:#999;
+		 		span{
+			 		color:#999;
+		 		}
+			}
+			p{
+		 		color:#999;
+			}
+			time{
+		 		color:#999;
+			}
+		}
+		.be-overdue{
+			position:absolute;
+			top:0;
+			right:0;
+			width:2rem;
+			font-size:0;
+			img{
+				width:100%;
+			}
+		}
+		.use{
+			@extend .be-overdue;
+		}
+	}
+}
+.history-coupon{
+	position:fixed;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index:3;
+	padding:2% 5%;
+	background-color:#f7f7f7;
+	a{
+		display:block;
+		text-align:center;
+		width:100%;
+		font:.7rem/40px $publicFont;
+ 		color:#fff;
+		background: -webkit-linear-gradient(right top, #da024d , #d9256c); /* Safari 5.1 - 6.0 */
+		background: linear-gradient(to right top, #d9256c , #da024d); /* 标准的语法 */
+		border-radius:3px;
+	    box-shadow: 1px 2px 5px #e589a6;
+	}
+}

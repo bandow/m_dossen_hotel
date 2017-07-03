@@ -63,19 +63,17 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 11:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 3:
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10335,45 +10333,27 @@ return jQuery;
 
 
 /***/ }),
-
-/***/ 4:
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_submitComment_scss__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_submitComment_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_sass_submitComment_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_userCoupons_scss__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_sass_userCoupons_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_sass_userCoupons_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 
-// import '../../src/plugins/swiper-3.4.2.min.css'
-
-// import '../../src/plugins/swiper-3.4.2.min.js';
 
 __WEBPACK_IMPORTED_MODULE_1_jquery___default()(document).ready(function () {
-	//点击覆盖层
-	__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".mask").on("click", function () {
-		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".mask").fadeOut();
-		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".page-album-info").removeClass("on");
+	//点击优惠券列表
+	__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".coupon-list .item").on("click", function () {
+		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(this).addClass("active").find(".select img").attr("src", "images/select_icon-f0e7f.png").parent().parent().parent().siblings().removeClass("active").find(".select img").attr("src", "images/no_select_icon-62713.png");
 	});
-	//点击相册列表
-	__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".img-list li").on("click", function () {
-		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".mask").fadeIn();
-		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".page-album-info").addClass("on");
-	});
-	//点击切换回复
-	__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".reply-change").on("click", function () {
-		// $(this).toggleClass("on").parent().next().slideToggle();
-		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(this).toggleClass("on").parent().next().slideToggle();
-	});
-
-	//幻灯片
-	var mySwiper = new Swiper('.swiper-container', {
-		pagination: '.swiper-pagination',
-		paginationType: 'fraction'
+	//点击不使用优惠券
+	__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".nonuse-coupon").on("click", function () {
+		__WEBPACK_IMPORTED_MODULE_1_jquery___default()(".coupon-list .item").removeClass("active").find(".select img").attr("src", "images/no_select_icon-62713.png");
 	});
 });
 
 /***/ })
-
-/******/ });
+/******/ ]);

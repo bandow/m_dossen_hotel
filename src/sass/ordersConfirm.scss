@@ -1,0 +1,274 @@
+@import "base","variable","common";
+.orders-confirm-wrapper{
+	padding-top:44px;
+	padding-bottom:40px;
+	background:url('../images/hotel_info_bg.jpg') #f7f7f7 no-repeat; 
+	background-size:100% auto;
+}
+.orders-confirm-header{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	z-index:3;
+	padding:0 3%;
+	width:100%;
+	height:44px;
+ 	@include display(flex);
+ 	align-items:center;
+ 	.left{
+ 		width:10%;
+ 	}
+ 	h1{
+ 		width:80%;
+ 		font:.8rem/40px $publicFont;
+ 		color:#333;
+ 		text-align:center;
+ 	}
+ 	.right{
+ 		margin-left:-15%;
+ 		width:25%;
+ 		a{
+		    display: block;
+ 			font:.6rem/40px $publicFont;
+ 			color:#333;
+ 			text-align:right;
+ 		}
+ 	}
+}
+.orders-confirm-success{
+	.title{
+		@include display(flex);
+	 	align-items:center;
+	 	justify-content:center;
+	 	i{
+	 		margin-right:.5rem;
+	 		width:23px;
+	 		height:23px;
+	 		font-size:0;
+	 		img{
+	 			width:100%;
+	 		}
+	 	}
+	 	h3{
+	 		font:bold .8rem/2 $publicFont;
+	 		color:#990036;
+	 	}
+	}
+	>p{
+		text-align:center;
+		font:bold .6rem/2 $publicFont;
+ 		color:#333;
+ 		span{
+ 			color:#da004b;
+ 		}
+	}
+}
+.confirm-info{
+	position:relative;
+	margin:5%;
+	padding:2%;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow: 1px 2px 5px #ebebeb;
+	.title{
+		position:relative;
+		padding:3% 0;
+		@include display(flex);
+	 	align-items:center;
+	 	justify-content:space-between;
+	 	border-bottom:1px solid #eee;
+	 	&:before{
+			position:absolute;
+			top:80%;
+			left:-.8rem;
+			content:"";
+			width:.8rem;
+			height:.8rem;
+			background-color:#f7f7f7;
+			border-radius:100%;	
+		}
+		&:after{
+			position:absolute;
+			top:80%;
+			right:-.8rem;
+			content:"";
+			width:.8rem;
+			height:.8rem;
+			background-color:#f7f7f7;
+			border-radius:100%;	
+		}
+	 	h4{
+	 		font:.7rem/2 $publicFont;
+ 			color:#333;
+	 	}
+	 	a{
+	 		position:relative;
+			font:.7rem/1.5 $publicFont;
+			color:#999;
+			padding-right: 20px;	
+			&:before{
+				position:absolute;
+				top:35%;
+				right:0;
+				content:"";
+				width:0;
+				height:0;
+				border:5px solid;
+				border-color:#ddd transparent transparent transparent;
+			}
+	 	}
+	 	a.on{
+			&:before{
+				position:absolute;
+				top:5%;
+				right:0;
+				content:"";
+				width:0;
+				height:0;
+				border:5px solid;
+				border-color:#ddd transparent transparent transparent;
+				@include transform(rotate(180deg));
+			}
+		}
+	}
+	.info-list{
+		padding:5% 0;
+		p{
+			@include display(flex);
+		 	align-items:center;
+		 	display:none;
+		 	justify-content:space-between;
+		 	span{
+		 		font:.7rem/1.5 $publicFont;
+				color:#999;
+		 	}
+		 	&:nth-child(1){
+		 		@include display(flex);
+		 	}
+		 	&:nth-child(2){
+		 		@include display(flex);
+		 	}
+		}	
+	}
+	.price{
+		@extend .info-list;
+		padding:0;
+		p{
+			span{
+				&:last-child{
+					color:#990036;
+					font:.55rem/1.5 $publicFont;
+					strong{
+						font:bold 1rem/1.5 $publicFont;
+					}
+				}
+			}
+		}
+	}
+}
+.confirm-pay{
+	padding:5%;
+	background-color:#fff;
+	@include display(flex);
+ 	align-items:center;
+ 	justify-content:space-between;
+ 	.l{
+ 		@include display(flex);
+ 		align-items:center;
+ 		i{
+ 			margin-right:.5rem;
+ 			width:1.5rem;
+ 			font-size:0;
+ 			img{
+ 				width:100%;
+ 			}
+ 		}
+ 		span{
+ 			font:.7rem/2 $publicFont;
+ 			color:#666;
+ 		}
+ 	}
+ 	.r{
+		i{
+			display:block;
+			width:1rem;
+			height:1rem;
+			font-size:0;
+			img{
+				width:100%;
+			}
+		}
+ 	}
+}
+.orders-confirm-footer{
+	position:fixed;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index:3;
+	padding:2% 5%;
+	background-color:#f7f7f7;
+	a{
+		display:block;
+		text-align:center;
+		width:100%;
+		font:.7rem/40px $publicFont;
+ 		color:#fff;
+		background: -webkit-linear-gradient(right top, #da024d , #d9256c); /* Safari 5.1 - 6.0 */
+		background: linear-gradient(to right top, #d9256c , #da024d); /* 标准的语法 */
+		border-radius:3px;
+	    box-shadow: 1px 2px 5px #e589a6;
+	}
+}
+.page-prompt{
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:5;
+	padding:5% 0 0 5%;
+	width:70%;
+	height:auto;
+	border-radius:5px;
+	background-color:#fff;
+	@include transition(all .5s);
+	@include transform(translate3d(-50%,-400%,0));
+	p{
+		font:.7rem/1.5 $publicFont;
+ 		color:#666;
+ 		text-align:center;
+	}
+	.btn{
+		border-top:1px solid #eee;
+		margin-top:1rem;
+		@include display(flex);
+	 	align-items:center;
+	 	a{
+	 		padding:5%;
+	 		flex:1;
+	 		border-right:1px solid #eee;
+	 		font:.7rem/1.5 $publicFont;
+	 		color:#333;
+	 		text-align:center;
+	 		&:last-child{
+	 			color:#da004c;
+	 			border-right:0;
+	 		}
+	 	}
+	}
+}
+.page-prompt.on{
+	@include transition(all .5s);
+	@include transform(translate3d(-50%,-50%,0));
+}
+.mask{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+	z-index:4;
+	background-color:#000;
+	opacity:.7;
+}
