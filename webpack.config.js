@@ -15,12 +15,12 @@ const config = {
         // paySuccess:'./scripts/paySuccess.js',
         // hotelDisplay:'./scripts/hotelDisplay.js',
         // hotelComment:'./scripts/hotelComment.js',
-       // submitComment:'./scripts/submitComment.js',
+       submitComment:'./scripts/submitComment.js',
        // submitCommentSuccess:'./scripts/submitCommentSuccess.js',
        // hotelMore:'./scripts/hotelMore.js',
        //userCoupons:'./scripts/userCoupons.js',
        // historyCoupons:'./scripts/historyCoupons.js',
-       ordersConfirm:'./scripts/ordersConfirm.js',
+       // ordersConfirm:'./scripts/ordersConfirm.js',
     },
     output:{
         path: path.resolve(__dirname, './dist'),
@@ -69,16 +69,16 @@ const config = {
         ]
     },
     plugins: [
-       // new htmlWebpackPlugin({
-       //      filename:'hotelInfo.html',
-       //      template:'hotelInfo.html',
-       //      inject:'body',  //指定js放那个位子 比如body
-       //      minify:{            //压缩
-       //          removeComments:false,   //true去掉注释
-       //          collapseWhitespace:false  //true去掉空格
-       //      },
-       //      chunks:['hotelInfo'],   //指定那个js
-       // }),
+       new htmlWebpackPlugin({
+            filename:'hotelInfo.html',
+            template:'hotelInfo.html',
+            inject:'body',  //指定js放那个位子 比如body
+            minify:{            //压缩
+                removeComments:false,   //true去掉注释
+                collapseWhitespace:false  //true去掉空格
+            },
+            chunks:['hotelInfo'],   //指定那个js
+       }),
        // new htmlWebpackPlugin({
        //      filename:'ordersSubmit.html',
        //      template:'ordersSubmit.html',
@@ -189,16 +189,16 @@ const config = {
        //      },
        //      chunks:['historyCoupons'],   //指定那个js
        // }),
-         new htmlWebpackPlugin({
-            filename:'ordersConfirm.html',
-            template:'ordersConfirm.html',
-            inject:'body',  //指定js放那个位子 比如body
-            minify:{            //压缩
-                removeComments:false,   //true去掉注释
-                collapseWhitespace:false  //true去掉空格
-            },
-            chunks:['ordersConfirm'],   //指定那个js
-       }),
+       //   new htmlWebpackPlugin({
+       //      filename:'ordersConfirm.html',
+       //      template:'ordersConfirm.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['ordersConfirm'],   //指定那个js
+       // }),
        //转化sass的方法
        extractSass,
     ]

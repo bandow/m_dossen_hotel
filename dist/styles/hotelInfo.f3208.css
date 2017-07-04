@@ -1,0 +1,847 @@
+@charset "UTF-8";
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2016-10-18
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+  /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+html, body {
+  /*-webkit-user-select:none禁止用户进行复制.选择.*/
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  /*使用min-height:100%代替height：100%*/
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, div, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*把所有元素的内边距和边框不再会增加它的宽度*/
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none;
+  /*去掉列表点*/ }
+
+table {
+  border-collapse: collapse;
+  /*去掉表格的双行线*/
+  border-spacing: 0; }
+
+/*取消a标签在移动端点击时的背景颜色*/
+a, a:hover, a:active, a:visited, a:link, a:focus {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none; }
+
+input {
+  -webkit-appearance: none;
+  /*ios去除input默认样式*/ }
+
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2017-06-01
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-size: 18px; }
+
+@media (min-device-width: 320px) {
+  html {
+    font-size: 18px; } }
+
+@media (min-device-width: 360px) {
+  html {
+    font-size: 20.25px; } }
+
+@media (min-device-width: 375px) {
+  html {
+    font-size: 21.1px; } }
+
+@media (min-device-width: 384px) {
+  html {
+    font-size: 21.6px; } }
+
+@media (min-device-width: 400px) {
+  html {
+    font-size: 22.5px; } }
+
+@media (min-device-width: 412px) {
+  html {
+    font-size: 23.17px; } }
+
+@media (min-device-width: 414px) {
+  html {
+    font-size: 23.3px; } }
+
+@media (min-device-width: 480px) {
+  html {
+    font-size: 26.99px; } }
+
+@media (min-device-width: 533px) {
+  html {
+    font-size: 29.98px; } }
+
+@media (min-device-width: 568px) {
+  html {
+    font-size: 31.95px; } }
+
+@media (min-device-width: 600px) {
+  html {
+    font-size: 33.74px; } }
+
+@media (min-device-width: 640px) {
+  html {
+    font-size: 24px; } }
+
+.wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f7f7f7; }
+
+.dossen-header-left {
+  position: relative; }
+  .dossen-header-left:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -5px;
+    color: #333;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg); }
+
+.dossen-arrow-bottom {
+  position: relative; }
+  .dossen-arrow-bottom:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -5px;
+    color: #333;
+    -webkit-transform: rotateZ(-135deg);
+    transform: rotateZ(-135deg); }
+
+.dossen-arrow {
+  position: relative; }
+  .dossen-arrow:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -4px;
+    color: #ccc;
+    -webkit-transform: rotateZ(135deg);
+    transform: rotateZ(135deg); }
+
+.dossen-pr {
+  padding-right: 5%; }
+
+.hotel-info-wrapper {
+  background: url(../images/hotel_info_bg-7884f.jpg) #f7f7f7 no-repeat;
+  background-size: 100% auto; }
+
+.hotel-info-header {
+  padding: 0 3%;
+  width: 100%;
+  height: 44px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .hotel-info-header .left {
+    width: 10%; }
+  .hotel-info-header h1 {
+    width: 80%;
+    font: 0.8rem/40px -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #333;
+    text-align: center; }
+  .hotel-info-header .right {
+    margin-left: -10%;
+    width: 20%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .hotel-info-header .right i {
+      width: 20px;
+      height: 20px;
+      font-size: 0;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .hotel-info-header .right i img {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+        max-width: 100%; }
+
+.hotel-info-header-active {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  background: url(../images/header_top_bg-d6cb1.jpg) no-repeat;
+  background-size: 100% auto; }
+
+.info-date {
+  margin-bottom: .5rem; }
+
+.info {
+  position: relative;
+  z-index: 1;
+  margin: 0 3%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px #ccc; }
+  .info .info-content {
+    padding: 3%;
+    border-bottom: 1px solid #eee; }
+    .info .info-content .room-img {
+      position: relative;
+      float: left;
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      overflow: hidden; }
+      .info .info-content .room-img img {
+        width: 100%; }
+      .info .info-content .room-img .entry-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0 .3rem;
+        background: rgba(0, 0, 0, 0.6);
+        display: -webkit-flex;
+        display: flex;
+        align-items: center; }
+        .info .info-content .room-img .entry-img i {
+          width: 12px;
+          font-size: 0;
+          margin-right: .1rem; }
+          .info .info-content .room-img .entry-img i img {
+            width: 100%; }
+        .info .info-content .room-img .entry-img span {
+          font: 0.55rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          color: #fff; }
+    .info .info-content .room-detail {
+      margin-left: 90px;
+      margin-right: 20px;
+      flex: 1; }
+      .info .info-content .room-detail h3 {
+        font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #333; }
+      .info .info-content .room-detail p {
+        margin-top: 5px;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center; }
+        .info .info-content .room-detail p i {
+          width: 12px; }
+          .info .info-content .room-detail p i img {
+            width: 100%; }
+        .info .info-content .room-detail p span {
+          margin-left: .2rem;
+          flex: 1;
+          font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+          color: #999;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+  .info .info-score {
+    padding: 5% 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .info .info-score h2 {
+      font: 1.2rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #990036; }
+      .info .info-score h2 span {
+        font-size: .55rem; }
+    .info .info-score .r {
+      margin-left: .5rem; }
+      .info .info-score .r .star {
+        width: 80px;
+        height: 12px;
+        background-image: url(../images/star-2654c.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 0 0; }
+      .info .info-score .r a {
+        display: block;
+        font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #999; }
+      .info .info-score .r .star0 {
+        background-position: 0 -126px; }
+      .info .info-score .r .star1 {
+        background-position: 0 -114px; }
+      .info .info-score .r .star2 {
+        background-position: 0 -101px; }
+      .info .info-score .r .star3 {
+        background-position: 0 -89px; }
+      .info .info-score .r .star4 {
+        background-position: 0 -76px; }
+      .info .info-score .r .star5 {
+        background-position: 0 -64px; }
+      .info .info-score .r .star6 {
+        background-position: 0 -51px; }
+      .info .info-score .r .star7 {
+        background-position: 0 -38px; }
+      .info .info-score .r .star8 {
+        background-position: 0 -25px; }
+      .info .info-score .r .star9 {
+        background-position: 0 -12px; }
+      .info .info-score .r .star10 {
+        background-position: 0 0; }
+
+.date {
+  position: relative;
+  z-index: 0;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  margin-top: -70px;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd; }
+  .date .l, .date .r {
+    text-align: center; }
+    .date .l p, .date .r p {
+      font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999; }
+    .date .l h2, .date .r h2 {
+      font: 0.9rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #990036; }
+  .date .c {
+    position: relative;
+    margin: 0 10%; }
+    .date .c i {
+      width: 1px;
+      height: 2rem;
+      background: #999;
+      display: block; }
+    .date .c p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      width: 2rem;
+      background: #fff;
+      font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999;
+      text-align: center;
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+.type {
+  margin-bottom: .5rem; }
+  .type > ul > li {
+    border-bottom: 1px solid #eee; }
+    .type > ul > li:last-child {
+      border-bottom: 0; }
+
+.rooms .wrap {
+  padding: 5% 3%;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .rooms .wrap .l h2, .rooms .wrap .date .r h2, .date .rooms .wrap .r h2 {
+    position: relative;
+    font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #333; }
+    .rooms .wrap .l h2:before, .rooms .wrap .date .r h2:before, .date .rooms .wrap .r h2:before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      content: "";
+      width: 0;
+      height: 0;
+      border: 5px solid;
+      border-color: #e0e0e0 transparent transparent transparent;
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .rooms .wrap .l p, .rooms .wrap .date .r p, .date .rooms .wrap .r p {
+    font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #999; }
+  .rooms .wrap .r .price {
+    position: relative;
+    padding-right: 20px;
+    color: #990036;
+    font: 0.65rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .rooms .wrap .r .price span {
+      font-size: .55rem; }
+    .rooms .wrap .r .price strong {
+      font-size: .8rem; }
+    .rooms .wrap .r .price:before {
+      position: absolute;
+      top: 35%;
+      right: 0;
+      content: "";
+      width: 0;
+      height: 0;
+      border: 5px solid;
+      border-color: #f19ec2 transparent transparent transparent; }
+
+.rooms .info-list {
+  display: none; }
+
+.rooms.on .wrap .l h2:before, .rooms.on .wrap .date .r h2:before, .date .rooms.on .wrap .r h2:before {
+  border-color: #f19ec2 transparent transparent transparent; }
+
+.rooms.on .wrap .r .price {
+  color: #999; }
+  .rooms.on .wrap .r .price strong {
+    text-decoration: line-through; }
+  .rooms.on .wrap .r .price:before {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: #f19ec2 transparent transparent transparent;
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.rooms.on .info-list {
+  display: block; }
+
+.info-list ul {
+  padding: 0 3%; }
+  .info-list ul li {
+    border-bottom: 1px solid #eee; }
+
+.info-list .more {
+  display: none;
+  padding: .2rem 0;
+  text-align: center; }
+  .info-list .more p {
+    color: #999;
+    font: 0.65rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+  .info-list .more i {
+    width: 18px;
+    height: 20px;
+    margin: -5px auto 0;
+    display: block; }
+    .info-list .more i:after {
+      color: #999; }
+
+.info-list .more.active i {
+  margin-top: 0; }
+  .info-list .more.active i:after {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg); }
+
+.roomdetail {
+  padding: 5% 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .roomdetail .left h3 {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .roomdetail .left h3 span {
+      font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #333; }
+    .roomdetail .left h3 i {
+      margin-left: .2rem;
+      width: 17px;
+      height: 17px;
+      font-size: 0; }
+      .roomdetail .left h3 i img {
+        width: 100%;
+        height: 100%; }
+  .roomdetail .left p {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .roomdetail .left p span {
+      margin-right: .2rem;
+      font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999; }
+  .roomdetail .left .activity {
+    margin-top: .2rem; }
+    .roomdetail .left .activity em {
+      padding: 0 .1rem;
+      font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #da004c;
+      border: 1px solid #da004c;
+      border-radius: 3px; }
+  .roomdetail .right {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .roomdetail .right .value {
+      padding-right: 20px;
+      text-align: right; }
+      .roomdetail .right .value .price {
+        position: relative;
+        color: #990036;
+        font: 0.65rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+        .roomdetail .right .value .price span {
+          font-size: .55rem; }
+        .roomdetail .right .value .price strong {
+          margin-left: .1rem;
+          font-size: .8rem; }
+      .roomdetail .right .value > p {
+        font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        color: #999; }
+    .roomdetail .right .btn {
+      padding: 2%;
+      width: 2.5rem;
+      height: 2rem;
+      background: #da024d;
+      background: -webkit-linear-gradient(right top, #da024d, #d9256c);
+      /* Safari 5.1 - 6.0 */
+      background: linear-gradient(to right top, #d9256c, #da024d);
+      /* 标准的语法 */
+      border-radius: 3px;
+      box-shadow: 1px 2px 5px #e589a6; }
+    .roomdetail .right .btn1 {
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .roomdetail .right .btn1 p {
+        color: #fff;
+        font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .roomdetail .right .btn2 {
+      text-align: center; }
+      .roomdetail .right .btn2 p {
+        color: #fff;
+        font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+        .roomdetail .right .btn2 p:nth-child(2) {
+          margin-top: .1rem;
+          background-color: #fff;
+          color: #da024d;
+          font-size: .6rem;
+          border-radius: 3px; }
+
+.full-room .left h3 span {
+  font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  color: #999; }
+
+.full-room .left .activity {
+  margin-top: .2rem; }
+  .full-room .left .activity em {
+    padding: 0 .1rem;
+    font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 3px; }
+
+.full-room .right .value .price {
+  color: #999; }
+
+.full-room .right .value > p {
+  font: 0.6rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  color: #999; }
+
+.full-room .right .btn {
+  background: #999;
+  background: -webkit-linear-gradient(right top, #999, #999);
+  /* Safari 5.1 - 6.0 */
+  background: linear-gradient(to right top, #999, #999);
+  /* 标准的语法 */
+  box-shadow: none; }
+
+.full-room .right .btn1 {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .full-room .right .btn1 p {
+    color: #fff;
+    font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.full-room .right .btn2 {
+  text-align: center; }
+  .full-room .right .btn2 p {
+    color: #fff;
+    font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .full-room .right .btn2 p:nth-child(2) {
+      margin-top: .1rem;
+      background-color: #fff;
+      color: #da024d;
+      font-size: .6rem;
+      border-radius: 3px; }
+
+.full-room .right .btn3 {
+  text-align: center; }
+  .full-room .right .btn3 p {
+    color: #fff;
+    font: 0.7rem/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.hotel-serve {
+  padding: 3%;
+  margin-bottom: 1rem;
+  background-color: #fff; }
+  .hotel-serve h3 {
+    width: 20%;
+    color: #999;
+    font: 0.8rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    border-bottom: 2px solid #eee;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: .2rem; }
+  .hotel-serve ul {
+    padding: 5% 10% 0;
+    display: -webkit-flex;
+    display: flex; }
+    .hotel-serve ul li {
+      flex: 1; }
+      .hotel-serve ul li i {
+        margin: 0 auto;
+        width: 25px;
+        height: 25px;
+        font-size: 0;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center; }
+        .hotel-serve ul li i img {
+          width: 100%;
+          height: 100%; }
+      .hotel-serve ul li p {
+        text-align: center;
+        color: #999;
+        font: 0.6rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 4;
+  background-color: #000;
+  opacity: .7; }
+
+.page-activity-info, .page-room-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #fff;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(-50%, -300%, 0);
+  -o-transform: translate3d(-50%, -300%, 0);
+  -ms-transform: translate3d(-50%, -300%, 0);
+  -webkit-transform: translate3d(-50%, -300%, 0);
+  transform: translate3d(-50%, -300%, 0); }
+  .page-activity-info .img, .page-room-info .img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    font-size: 0; }
+    .page-activity-info .img img, .page-room-info .img img {
+      width: 100%; }
+  .page-activity-info .text, .page-room-info .text {
+    padding: 10%; }
+    .page-activity-info .text h3, .page-room-info .text h3 {
+      margin-bottom: .3rem;
+      color: #333;
+      font: bold 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+    .page-activity-info .text p, .page-room-info .text p {
+      color: #666;
+      font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+  .page-activity-info .close, .page-room-info .close {
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0;
+    -moz-transform: translate3d(-50%, 0, 0);
+    -o-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
+    .page-activity-info .close img, .page-room-info .close img {
+      width: 100%; }
+
+.page-activity-info.on, .on.page-room-info {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0); }
+
+.page-room-info .text p span {
+  margin-right: .3rem; }
+
+.page-room-info.on {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0); }
+
+.page-hotel-equipment {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 5%;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(0, 300%, 0);
+  -o-transform: translate3d(0, 300%, 0);
+  -ms-transform: translate3d(0, 300%, 0);
+  -webkit-transform: translate3d(0, 300%, 0);
+  transform: translate3d(0, 300%, 0); }
+  .page-hotel-equipment .title h2 {
+    color: #666;
+    font: bold 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    text-align: center; }
+  .page-hotel-equipment .title i {
+    display: block;
+    width: 2rem;
+    height: 2px;
+    background-color: #f19ec2;
+    margin: .2rem auto 0;
+    border-radius: 10px; }
+  .page-hotel-equipment ul {
+    padding: .3rem 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee; }
+    .page-hotel-equipment ul:nth-child(3) {
+      border-bottom: 0; }
+    .page-hotel-equipment ul li {
+      padding: 3% 0;
+      width: 33.333%;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .page-hotel-equipment ul li i {
+        width: 1rem;
+        height: 1rem;
+        font-size: 0;
+        margin-right: .2rem; }
+        .page-hotel-equipment ul li i img {
+          width: 100%; }
+      .page-hotel-equipment ul li span {
+        color: #333;
+        font: 0.65rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
+  .page-hotel-equipment .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: .8rem;
+    height: .8rem;
+    font-size: 0; }
+    .page-hotel-equipment .close img {
+      width: 100%; }
+
+.page-hotel-equipment.on {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }

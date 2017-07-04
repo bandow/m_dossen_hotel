@@ -153,17 +153,6 @@ $(document).ready(function(){
 		//input内容清空
 		$(this).val("");
 	});
-
-	//点击覆盖层
-    $(".mask").on("click",function(){
-    	$(".mask").fadeOut();
-    	$(".page-album-info").removeClass("on");
-    });
-    $(".delete").on("click",function(){
-    	$(".swiper-slide:eq(0)").remove();
-    	$(".swiper-pagination-total").text($(".swiper-pagination-total").text()-1);
-    });
-
     $(".z_photo").delegate(".close-upimg","click",function(){
      	  $(".works-mask").show();
      	  delParent = $(this).parent();    	  
@@ -180,10 +169,7 @@ $(document).ready(function(){
 	
 	$(".wsdel-no").click(function(){
 		$(".works-mask").hide();
-	});
-
-	 
-		
+	});	
 	function validateUp(files){
 		var arrFiles = [];//替换的文件数组
 		for(var i = 0, file; file = files[i]; i++){
@@ -211,10 +197,37 @@ $(document).ready(function(){
 		return arrFiles;
 	}	
 
+	//点击覆盖层
+    $(".mask").on("click",function(){
+    	$(".mask").fadeOut();
+    	$(".page-album-info").removeClass("on");
+    });
+    // $(".delete").on("click",function(){
+    // 	$(".swiper-slide:eq(0)").remove();
+    // 	$(".swiper-pagination-total").text($(".swiper-pagination-total").text()-1);
+    // });
 
 	//幻灯片
-	var mySwiper = new Swiper('.swiper-container',{
-		pagination : '.swiper-pagination',
-		paginationType : 'fraction',
-	});
+	function mySwioerAll(index){
+
+		var mySwiper = new Swiper('.swiper-container',{
+			pagination : '.swiper-pagination',
+			paginationType : 'fraction',
+			onSlideChangeEnd: function(swiper){
+		       index=swiper.activeIndex;
+		       console.log(index)
+		    }
+		});
+	}
+
+
+	$(".delete").on("click",function(){
+		alert(0);
+    	$(".swiper-slide:eq(0)").remove();
+    	mySwioerAll();
+    });
+
+
+    mySwioerAll();
+	
 });
