@@ -194,11 +194,11 @@ html {
 .dossen-pr {
   padding-right: 5%; }
 
-.hotel-comment-wrapper {
+.submit-comment-wrapper {
   padding-top: 44px;
   background-color: #fff; }
 
-.hotel-comment-header {
+.submit-comment-header {
   position: fixed;
   left: 0;
   top: 0;
@@ -212,186 +212,260 @@ html {
   display: -webkit-flex;
   display: flex;
   align-items: center; }
-  .hotel-comment-header .left {
+  .submit-comment-header .left {
     width: 10%; }
-  .hotel-comment-header h1 {
+  .submit-comment-header h1 {
     width: 80%;
     font: 0.8rem/40px -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
     color: #333;
     text-align: center; }
 
-.tag {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 2% 3%;
-  background-color: #f7f7f7;
-  height: auto;
-  overflow: hidden; }
-  .tag ul li {
-    float: left;
-    padding: 0 2%;
-    margin: 1% 1.5%;
+.room-info {
+  padding: 5% 5% 20% 5%;
+  text-align: center;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .room-info i {
+    margin: 0 auto 1rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 0;
+    border-radius: 100%;
+    overflow: hidden;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .room-info i img {
+      width: 100%;
+      height: 100%; }
+  .room-info h2 {
+    font: bold 1rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #333; }
+  .room-info p {
     font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-    color: #da004c;
-    border: 1px solid #da004c;
-    border-radius: 30px;
-    background-color: #fff; }
-    .tag ul li:first-child {
+    color: #999; }
+
+.tag-comment {
+  display: none; }
+  .tag-comment .title-tag h3 {
+    font: 0.8rem/3 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #990036;
+    text-align: center; }
+  .tag-comment .title-tag ul {
+    margin: 0 10%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .tag-comment .title-tag ul li {
+      margin: 1.5% 2.5%;
+      width: 45%;
+      font: 0.7rem/2 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+      color: #999;
+      border: 1px solid #eee;
+      border-radius: 30px;
+      text-align: center; }
+    .tag-comment .title-tag ul .active {
       background-color: #da004c;
       color: #fff; }
 
-.comment-list .item {
-  padding: 3%;
-  border-bottom: 1px solid #eee; }
-  .comment-list .item .name-title {
+.import-comment {
+  margin: 5% 12.5%;
+  padding: 2%;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #eeeeee; }
+  .import-comment textarea {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%; }
+
+.select-comment {
+  position: relative;
+  margin: 0 5%; }
+  .select-comment i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: block; }
+  .select-comment p {
+    position: relative;
+    font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #999;
+    text-align: center;
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto; }
+
+.big-star {
+  margin-top: 1rem; }
+  .big-star ul {
+    margin: 0 auto;
+    width: 300px;
+    height: 35px;
+    background: url(../images/big_star-fbaca.png) no-repeat;
+    background-size: 100% auto;
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
-    .comment-list .item .name-title .l {
-      display: -webkit-flex;
-      display: flex;
-      align-items: center; }
-      .comment-list .item .name-title .l h3 {
-        margin-right: 1rem;
-        width: 2.5rem;
-        font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-        color: #da004c;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap; }
-      .comment-list .item .name-title .l .star {
-        width: 80px;
-        height: 12px;
-        background-image: url(../images/star-2654c.png);
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: 0 0; }
-      .comment-list .item .name-title .l .star0 {
-        background-position: 0 -126px; }
-      .comment-list .item .name-title .l .star1 {
-        background-position: 0 -114px; }
-      .comment-list .item .name-title .l .star2 {
-        background-position: 0 -101px; }
-      .comment-list .item .name-title .l .star3 {
-        background-position: 0 -89px; }
-      .comment-list .item .name-title .l .star4 {
-        background-position: 0 -76px; }
-      .comment-list .item .name-title .l .star5 {
-        background-position: 0 -64px; }
-      .comment-list .item .name-title .l .star6 {
-        background-position: 0 -51px; }
-      .comment-list .item .name-title .l .star7 {
-        background-position: 0 -38px; }
-      .comment-list .item .name-title .l .star8 {
-        background-position: 0 -25px; }
-      .comment-list .item .name-title .l .star9 {
-        background-position: 0 -12px; }
-      .comment-list .item .name-title .l .star10 {
-        background-position: 0 0; }
-    .comment-list .item .name-title > span {
-      padding: 0 1.5%;
-      background: #da024d;
-      background: -webkit-linear-gradient(right top, #da024d, #d9256c);
-      /* Safari 5.1 - 6.0 */
-      background: linear-gradient(to right top, #d9256c, #da024d);
-      /* 标准的语法 */
-      border-radius: 3px;
-      font: 0.55rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-      color: #fff; }
-  .comment-list .item .tag-list {
-    padding: 3% 0;
-    height: auto;
-    overflow: hidden; }
-    .comment-list .item .tag-list ul li {
-      float: left;
-      padding: 0 2%;
-      margin: 1% 2% 1% 0;
-      font: 0.55rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-      color: #999;
-      border: 1px solid #ccc;
-      border-radius: 30px;
-      background-color: #fff; }
-  .comment-list .item > p {
-    font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-    color: #333; }
-  .comment-list .item .img-list {
-    padding: 3% 0; }
-    .comment-list .item .img-list ul {
-      display: -webkit-flex;
-      display: flex;
-      align-items: center; }
-      .comment-list .item .img-list ul li {
-        position: relative;
-        margin-right: 2%;
-        flex: 1;
-        font-size: 0; }
-        .comment-list .item .img-list ul li:last-child {
-          margin-right: 0; }
-        .comment-list .item .img-list ul li img {
-          width: 100%; }
-        .comment-list .item .img-list ul li p {
-          padding: 0 10%;
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.7);
-          display: -webkit-flex;
-          display: flex;
-          align-items: center; }
-          .comment-list .item .img-list ul li p i {
-            margin-right: .3rem;
-            width: .5rem;
-            font-size: 0;
-            display: block; }
-            .comment-list .item .img-list ul li p i img {
-              width: 100%; }
-          .comment-list .item .img-list ul li p span {
-            font: 0.55rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-            color: #fff; }
-  .comment-list .item .reply {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .big-star ul li {
+      width: 60px;
+      height: 35px; }
+  .big-star .big-star1 {
+    background-position: 0 -34px; }
+  .big-star .big-star2 {
+    background-position: 0 -68px; }
+  .big-star .big-star3 {
+    background-position: 0 -105px; }
+  .big-star .big-star4 {
+    background-position: 0 -141px; }
+  .big-star .big-star5 {
+    background-position: 0 -176px; }
+
+.select-name {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .select-name i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/pay_success_icon-8c33f.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: .3rem; }
+  .select-name span {
+    font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
     color: #999; }
-    .comment-list .item .reply span {
-      position: relative;
-      font: 0.65rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif; }
-      .comment-list .item .reply span:last-child {
-        padding-right: 5%; }
-        .comment-list .item .reply span:last-child:before {
-          position: absolute;
-          top: 32%;
-          right: 0;
-          content: "";
-          width: 0;
-          height: 0;
-          border-left: 5px solid;
-          border-right: 5px solid;
-          border-top: 8px solid;
-          border-color: #f19ec2 transparent transparent transparent; }
-    .comment-list .item .reply .reply-change.on:before {
-      position: absolute;
-      top: -2px;
-      right: 0;
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 5px solid;
-      border-right: 5px solid;
-      border-bottom: 8px solid;
-      border-color: transparent transparent #f19ec2 transparent; }
-  .comment-list .item .replay-text {
-    margin-top: 3%;
-    display: none;
-    background-color: #f2f2f2;
-    padding: 3%; }
-    .comment-list .item .replay-text p {
-      font: 0.65rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-      color: #999; }
-      .comment-list .item .replay-text p span {
-        color: #333; }
+
+.select-name.active i {
+  background: url(../images/no_select_icon-62713.png) no-repeat;
+  background-size: 100% 100%; }
+
+.btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  padding: 5%; }
+  .btn a {
+    display: block;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    font: 0.7rem/2rem -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #999;
+    text-align: center; }
+
+.btn.active a {
+  background-color: #d92068;
+  color: #fff; }
+
+/*上传图片插件的样式*/
+.img-box {
+  margin-top: 0; }
+
+.z_photo {
+  padding: 0 12.5% 5% 12.5%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  /*border:2px dashed #E7E6E6;*/
+  /*padding: 18px;*/ }
+
+.z_photo .up-p {
+  font-size: 12px;
+  color: #969696;
+  margin: 0;
+  margin-left: 10px; }
+
+.z_photo .z_file {
+  position: relative; }
+
+.z_file .file {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100; }
+
+.z_photo .up-section {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 0; }
+
+.up-section .close-upimg {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  display: none;
+  z-index: 10;
+  width: 20px; }
+
+.up-section:hover {
+  border: 2px solid #f15134; }
+
+.up-section:hover .close-upimg {
+  display: block; }
+
+.up-section:hover .up-span {
+  visibility: visible; }
+
+.z_photo .up-img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.loading {
+  border: 1px solid #D1D1D1; }
+
+.up-opcity {
+  opacity: 0; }
+
+.img-name-p {
+  display: none; }
+
+.upimg-div .up-section {
+  width: 50px;
+  height: 50px;
+  border: 1px dashed #eee; }
+
+.img-box .upimg-div .z_file {
+  width: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #eee; }
+
+.z_file .add-img {
+  display: block;
+  width: 20px;
+  height: 20px; }
 
 .mask {
   position: fixed;
@@ -421,11 +495,6 @@ html {
   -ms-transform: translate3d(-50%, -300%, 0);
   -webkit-transform: translate3d(-50%, -300%, 0);
   transform: translate3d(-50%, -300%, 0); }
-  .page-album-info h5 {
-    font: 0.75rem/1.8 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
-    color: #fff;
-    text-align: center;
-    margin-bottom: .5rem; }
   .page-album-info .swiper-slide {
     font-size: 0;
     background-color: #fff; }
@@ -457,6 +526,21 @@ html {
   -ms-transform: translate3d(-50%, -50%, 0);
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0); }
+
+.delete {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  z-index: 5;
+  display: none; }
+  .delete i {
+    width: .8rem;
+    font-size: 0;
+    display: block;
+    float: right;
+    margin-top: 5%; }
+    .delete i img {
+      width: 100%; }
 /**
  * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions

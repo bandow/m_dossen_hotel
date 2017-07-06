@@ -42,10 +42,10 @@
  		border:1px solid #da004c;
  		border-radius:30px;
  		background-color:#fff;
- 		&:first-child{
-			background-color:#da004c;
-			color:#fff;
- 		}
+	}
+	ul li.active{
+		background-color:#da004c;
+		color:#fff;
 	}
 }
 .comment-list{

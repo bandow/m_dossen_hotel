@@ -14,14 +14,14 @@ const config = {
         // selectBreakfast:'./scripts/selectBreakfast.js',
         // paySuccess:'./scripts/paySuccess.js',
         // hotelDisplay:'./scripts/hotelDisplay.js',
-        // hotelComment:'./scripts/hotelComment.js',
+        hotelComment:'./scripts/hotelComment.js',
        // submitComment:'./scripts/submitComment.js',
        // submitCommentSuccess:'./scripts/submitCommentSuccess.js',
        // hotelMore:'./scripts/hotelMore.js',
        //userCoupons:'./scripts/userCoupons.js',
        // historyCoupons:'./scripts/historyCoupons.js',
        // ordersConfirm:'./scripts/ordersConfirm.js',
-       404:'./scripts/404.js',
+       // 404:'./scripts/404.js',
     },
     output:{
         path: path.resolve(__dirname, './dist'),
@@ -130,16 +130,16 @@ const config = {
        //      },
        //      chunks:['hotelDisplay'],   //指定那个js
        // }),
-       //  new htmlWebpackPlugin({
-       //      filename:'hotelComment.html',
-       //      template:'hotelComment.html',
-       //      inject:'body',  //指定js放那个位子 比如body
-       //      minify:{            //压缩
-       //          removeComments:false,   //true去掉注释
-       //          collapseWhitespace:false  //true去掉空格
-       //      },
-       //      chunks:['hotelComment'],   //指定那个js
-       // }),
+        new htmlWebpackPlugin({
+            filename:'hotelComment.html',
+            template:'hotelComment.html',
+            inject:'body',  //指定js放那个位子 比如body
+            minify:{            //压缩
+                removeComments:false,   //true去掉注释
+                collapseWhitespace:false  //true去掉空格
+            },
+            chunks:['hotelComment'],   //指定那个js
+       }),
        //  new htmlWebpackPlugin({
        //      filename:'submitComment.html',
        //      template:'submitComment.html',
@@ -200,16 +200,16 @@ const config = {
        //      },
        //      chunks:['ordersConfirm'],   //指定那个js
        // }),
-         new htmlWebpackPlugin({
-            filename:'404.html',
-            template:'404.html',
-            inject:'body',  //指定js放那个位子 比如body
-            minify:{            //压缩
-                removeComments:false,   //true去掉注释
-                collapseWhitespace:false  //true去掉空格
-            },
-            chunks:['404'],   //指定那个js
-       }),
+       //   new htmlWebpackPlugin({
+       //      filename:'404.html',
+       //      template:'404.html',
+       //      inject:'body',  //指定js放那个位子 比如body
+       //      minify:{            //压缩
+       //          removeComments:false,   //true去掉注释
+       //          collapseWhitespace:false  //true去掉空格
+       //      },
+       //      chunks:['404'],   //指定那个js
+       // }),
        //转化sass的方法
        extractSass,
     ]
