@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html id="html" lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="不超过150个字符"/>
+<meta name="keywords" content="不超过80个字符"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title></title>
+<style>
+	@charset "UTF-8";
+	/* =================================================================
+	* Reset Style for Mobile
+	* Author:雪丘行||Bandow
+	* Author URI:http://www.unll123.com/
+	* Date:2016-10-18
+	* Version:0.0.1
+	* ================================================================== */
+	html {
+	  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+	  /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+	  -ms-text-size-adjust: 100%;
+	  -webkit-text-size-adjust: 100%; }
+
+	html, body {
+	  /*-webkit-user-select:none禁止用户进行复制.选择.*/
+	  -webkit-user-select: none;
+	  user-select: none;
+	  width: 100%;
+	  /*使用min-height:100%代替height：100%*/
+	  height: 100%;
+	  min-height: 100%; }
+
+	body {
+	  /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+	  overflow: scroll;
+	  -webkit-overflow-scrolling: touch; }
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, div, mark, audio, video {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font: inherit;
+	  font-size: 100%;
+	  vertical-align: baseline;
+	  /*把所有元素的内边距和边框不再会增加它的宽度*/
+	  -moz-box-sizing: border-box;
+	  /* Firefox */
+	  -webkit-box-sizing: border-box;
+	  /* Safari */
+	  box-sizing: border-box; }
+
+	ol, ul {
+	  list-style: none;
+	  /*去掉列表点*/ }
+
+	table {
+	  border-collapse: collapse;
+	  /*去掉表格的双行线*/
+	  border-spacing: 0; }
+
+	/*取消a标签在移动端点击时的背景颜色*/
+	a, a:hover, a:active, a:visited, a:link, a:focus {
+	  -webkit-tap-highlight-color: transparent;
+	  -webkit-tap-highlight-color: transparent;
+	  outline: none;
+	  background: none;
+	  text-decoration: none; }
+
+	input {
+	  -webkit-appearance: none;
+	  /*ios去除input默认样式*/ }
+
+	/* =================================================================
+	* Reset Style for Mobile
+	* Author:雪丘行||Bandow
+	* Author URI:http://www.unll123.com/
+	* Date:2017-06-01
+	* Version:0.0.1
+	* ================================================================== */
+	html {
+	  font-size: 18px; }
+
+	@media (min-device-width: 320px) {
+	  html {
+	    font-size: 18px; } }
+
+	@media (min-device-width: 360px) {
+	  html {
+	    font-size: 20.25px; } }
+
+	@media (min-device-width: 375px) {
+	  html {
+	    font-size: 21.1px; } }
+
+	@media (min-device-width: 384px) {
+	  html {
+	    font-size: 21.6px; } }
+
+	@media (min-device-width: 400px) {
+	  html {
+	    font-size: 22.5px; } }
+
+	@media (min-device-width: 412px) {
+	  html {
+	    font-size: 23.17px; } }
+
+	@media (min-device-width: 414px) {
+	  html {
+	    font-size: 23.3px; } }
+
+	@media (min-device-width: 480px) {
+	  html {
+	    font-size: 26.99px; } }
+
+	@media (min-device-width: 533px) {
+	  html {
+	    font-size: 29.98px; } }
+
+	@media (min-device-width: 568px) {
+	  html {
+	    font-size: 31.95px; } }
+
+	@media (min-device-width: 600px) {
+	  html {
+	    font-size: 33.74px; } }
+
+	@media (min-device-width: 640px) {
+	  html {
+	    font-size: 24px; } }
+
+	.wrapper {
+	  width: 100%;
+	  max-width: 640px;
+	  min-height: 100%;
+	  height: auto;
+	  margin: 0 auto;
+	  overflow: hidden;
+	  background-color: #f7f7f7; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<button onclick="maskPrompt('提示','订单已支付，请勿重复支付');">点击</button>
+</div>
+<style>
+	.mask-prompt{
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		display:none;
+		z-index:9;
+		background-color:#000;
+		opacity:.7;
+	}
+	.info-prompt{
+		position:fixed;
+		top:50%;
+		left:50%;
+		z-index:10;
+		width:80%;
+		height:auto;
+		background-color:#fff;
+		border-radius:5px;
+		-webkit-transform:translate3d(-50%,-500%,0);
+		transform:translate3d(-50%,-500%,0);
+		-webkit-transition:all .5s;
+		transition:all .5s;
+	}
+	.info-prompt.info-prompt-active{
+		-webkit-transform:translate3d(-50%,-50%,0);
+		transform:translate3d(-50%,-50%,0);
+		-webkit-transition:all .5s;
+		transition:all .5s;
+	}
+	.info-prompt h3{
+		margin:5% 0;
+		font: 0.75rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    	color: #333;
+    	text-align:center;
+	}
+	.info-prompt p{
+		margin:5%;
+		font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    	color: #999;
+    	text-align:center;
+	}
+	.info-prompt a{
+		padding:3% 0;
+		border-top:1px solid #ddd;
+		display:block;
+		font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    	color: #da024d;
+    	text-align:center;
+	}
+</style>
+<!-- 
+<div class="mask-prompt"></div>
+<div class="info-prompt">
+    <h3>提示</h3>
+	<p>订单已支付，请勿重复支付</p>
+	<a href="javascript:;">确定</a>
+</div> 
+-->
+<script src="plugins/jquery-3.1.1.min.js"></script>
+<script>
+	function maskPrompt(title,msg){
+		var html='';
+		html+='<div class="mask-prompt"></div>';
+		html+='<div class="info-prompt">';
+		html+='<h3>'+title+'</h3>';
+		html+='<p>'+msg+'</p>';
+		html+='<a href="javascript:;">确定</a>';
+		html+='</div>';
+		$("body").append(html);
+		$(".mask-prompt").show();
+		$(".info-prompt").addClass("info-prompt-active");
+		$(".mask-prompt,.info-prompt a").on("click",function(){
+			$(".info-prompt").removeClass("info-prompt-active")
+			setTimeout(function(){
+				$(".mask-prompt").hide()
+			},150)
+			setTimeout(function(){
+				$(".mask-prompt,.info-prompt").remove();
+			},500)
+		});
+	}
+</script>
+</body>
+</html>

@@ -9,12 +9,12 @@ const config = {
     context: path.resolve(__dirname, './src'),
     entry: {
         // hotelInfo:'./scripts/hotelInfo.js',
-        // ordersSubmit:'./scripts/ordersSubmit.js',
+        ordersSubmit:'./scripts/ordersSubmit.js',
         // selectCoupon:'./scripts/selectCoupon.js',
         // selectBreakfast:'./scripts/selectBreakfast.js',
         // paySuccess:'./scripts/paySuccess.js',
         // hotelDisplay:'./scripts/hotelDisplay.js',
-        hotelComment:'./scripts/hotelComment.js',
+        // hotelComment:'./scripts/hotelComment.js',
        // submitComment:'./scripts/submitComment.js',
        // submitCommentSuccess:'./scripts/submitCommentSuccess.js',
        // hotelMore:'./scripts/hotelMore.js',
@@ -70,25 +70,25 @@ const config = {
         ]
     },
     plugins: [
-       new htmlWebpackPlugin({
-            filename:'hotelInfo.html',
-            template:'hotelInfo.html',
-            inject:'body',  //指定js放那个位子 比如body
-            minify:{            //压缩
-                removeComments:false,   //true去掉注释
-                collapseWhitespace:false  //true去掉空格
-            },
-            chunks:['hotelInfo'],   //指定那个js
-       }),
        // new htmlWebpackPlugin({
-       //      filename:'ordersSubmit.html',
-       //      template:'ordersSubmit.html',
+       //      filename:'hotelInfo.html',
+       //      template:'hotelInfo.html',
        //      inject:'body',  //指定js放那个位子 比如body
        //      minify:{            //压缩
        //          removeComments:false,   //true去掉注释
        //          collapseWhitespace:false  //true去掉空格
        //      },
-       //      chunks:['ordersSubmit'],   //指定那个js
+       //      chunks:['hotelInfo'],   //指定那个js
+       // }),
+       new htmlWebpackPlugin({
+            filename:'ordersSubmit.html',
+            template:'ordersSubmit.html',
+            inject:'body',  //指定js放那个位子 比如body
+            minify:{            //压缩
+                removeComments:false,   //true去掉注释
+                collapseWhitespace:false  //true去掉空格
+            },
+            chunks:['ordersSubmit'],   //指定那个js
        // }),
        // new htmlWebpackPlugin({
        //      filename:'selectCoupon.html',
